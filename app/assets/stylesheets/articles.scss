@@ -1,0 +1,80 @@
+// Place all the styles related to the Articles controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+
+// NavBar
+
+#nav_container {
+  background-color: white;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+
+  box-shadow: 1px 1px 1px 0.3px rgb(230, 230, 230);
+
+  h1 {
+    margin: 10px;
+
+  }
+
+  a {
+    margin: 20px;
+    background-color: #73B1C1;
+    padding: 10px 15px;
+    border-radius: 8px;
+    color: white;
+    text-decoration: none;
+
+    &:hover {
+      background-color: #456a73;
+    }
+  }
+
+
+}
+
+
+
+
+// Index
+
+
+body {
+  margin: 0px;
+  background-color: rgb(230, 230, 230);
+  font-family: "Avenir";
+}
+
+
+#container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.article_card {
+  margin: 8px;
+  padding: 10px;
+  width: 600px;
+  flex: center;
+
+  a.article_name {
+    color: #73B1C1;
+    font-size: 20px;
+    margin: 10px;
+    text-decoration: none;
+    transition: 0.4s;
+
+    &:hover{
+      color: #456a73;
+    }
+  }
+
+  p {
+    margin: 10px;
+    font-size: 12px;
+    text-align: justify;
+  }
+}
